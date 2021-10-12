@@ -6,7 +6,9 @@ const DocumentSchema = mongoose.Schema({
   date: String,
   content: String,
   author: String,
-  archive_date: String,
+  archiveDate: String
+}, {
+  timestamps: true
 });
 
 const DocumentModel = mongoose.model('document', DocumentSchema);

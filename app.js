@@ -21,6 +21,6 @@ mongoose.connect('mongodb://localhost:27017/news-api', {
   .then(() => console.log('conectado a mongodb'))
   .catch(error => console.log('Error al conectar a MongoDB ' + error));
 
-app.use('/', documentRouter);
+app.use('/news', documentRouter);
 
 app.listen(3000, () => console.log('app running on port 3000'));
